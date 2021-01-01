@@ -7,7 +7,8 @@
 * [Data Structure](./Data-Structure/README.md)
 * [Algorithm](./Algorithm/README.md)
 
-## interactive design
+## 언어
+* [JAVA](./JAVA/README.md)
 
 ## 그 외
 * [Back-End](./Back-End/README.md)
