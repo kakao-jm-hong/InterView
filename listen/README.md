@@ -1,1 +1,2 @@
-# ¸éÁ¢¿¡¼­ µé¾ú´ø Áú¹®
+# ë©´ì ‘ì—ì„œ ë“¤ì—ˆë˜ ì§ˆë¬¸
+* [íŠ¸ëžœìž­ì…˜ ë…ë¦½ë ˆë²¨](../DataBase/document/isolationLevel.md)

@@ -1,6 +1,6 @@
 # Back-End
-- [ÀÎÅÍ³İ ÆäÀÌÁö°¡ º¸ÀÌ´Â °úÁ¤](./document/Internet_Process.md)
-- [À¥ ºê¶ó¿ìÀú¿¡¼­ÀÇ ¾ç¹æÇâ Åë½Å ¹æ¹ı](./document/Tow-way-communication.md)
+- [ì¸í„°ë„· í˜ì´ì§€ê°€ ë³´ì´ëŠ” ê³¼ì •](./document/Internet_Process.md)
+- [ì›¹ ë¸Œë¼ìš°ì €ì—ì„œì˜ ì–‘ë°©í–¥ í†µì‹  ë°©ë²•](./document/Tow-way-communication.md)
 - [Mybatis VS Hibernate](./document/mybatis_hibernate.md)
-# Back-End ·Îµå¸Ê
+# Back-End ë¡œë“œë§µ
 ![](2021-01-02-03-19-27.png)

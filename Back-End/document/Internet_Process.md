@@ -1,35 +1,35 @@
-## <span style="color:#ABF200">ºê¶ó¿ìÀú¿¡ www.naver.com  À» ¾²°í Enter Å¬¸¯½Ã ¾î¶²ÀÏÀÌ ÀÏ¾î³¯±î?</span>
+## <span style="color:#ABF200">ë¸Œë¼ìš°ì €ì— www.naver.com  ì„ ì“°ê³  Enter í´ë¦­ì‹œ ì–´ë–¤ì¼ì´ ì¼ì–´ë‚ ê¹Œ?</span>
 <br>
 
 ```
-1. ºê¶ó¿ìÀú¿¡ www.naver.comÀ» ÀÔ·ÂÇÑ´Ù.
-2. DNS(Domain Name Service) ¸¦ ÅëÇØ IP(Internet Protocol)ÁÖ¼Ò¸¦ È¹µæÇÑ´Ù.
-3. È¹µæÇÑ IP ÁÖ¼Ò¿¡ ÀÖ´Â ¼­¹ö¿Í TCP 3 Way Handshake¸¦ ÁøÇàÇÑ´Ù.
-4. Åë½ÅÀ» ¸ÎÀº ¼­¹ö¿¡ HTTP Request¸¦ ÇÑ´Ù.
-5. ¼­¹ö¿¡¼­ º¸³½ HTTP Response¸¦ ÅëÇØ html ÆÄÀÏÀ» °¡Á®¿Â´Ù.
-6. Å©·Ò,¿þÀÏµî ºê¶ó¿ìÀú°¡ htmlÀ» ÇØ¼®ÇØ¼­ Ãâ·ÂÇÑ´Ù.
+1. ë¸Œë¼ìš°ì €ì— www.naver.comì„ ìž…ë ¥í•œë‹¤.
+2. DNS(Domain Name Service) ë¥¼ í†µí•´ IP(Internet Protocol)ì£¼ì†Œë¥¼ íšë“í•œë‹¤.
+3. íšë“í•œ IP ì£¼ì†Œì— ìžˆëŠ” ì„œë²„ì™€ TCP 3 Way Handshakeë¥¼ ì§„í–‰í•œë‹¤.
+4. í†µì‹ ì„ ë§ºì€ ì„œë²„ì— HTTP Requestë¥¼ í•œë‹¤.
+5. ì„œë²„ì—ì„œ ë³´ë‚¸ HTTP Responseë¥¼ í†µí•´ html íŒŒì¼ì„ ê°€ì ¸ì˜¨ë‹¤.
+6. í¬ë¡¬,ì›¨ì¼ë“± ë¸Œë¼ìš°ì €ê°€ htmlì„ í•´ì„í•´ì„œ ì¶œë ¥í•œë‹¤.
 ```
 
-ÀÏ¹ÝÀûÀ¸·Î´Â htmlÆÄÀÏÀ» °¡Á®¿À°ÔµÇ°í °æ¿ì¿¡ µû¶ó¼­ REST API È£Ãâ½Ã JSON, XML µµ È£ÃâÇÏ°Ô µÈ´Ù.
+ì¼ë°˜ì ìœ¼ë¡œëŠ” htmlíŒŒì¼ì„ ê°€ì ¸ì˜¤ê²Œë˜ê³  ê²½ìš°ì— ë”°ë¼ì„œ REST API í˜¸ì¶œì‹œ JSON, XML ë„ í˜¸ì¶œí•˜ê²Œ ëœë‹¤.
 
 ![](2021-01-02-02-05-11.png)
 
 <br>
 
-# ¿ë¾î¼³¸í
+# ìš©ì–´ì„¤ëª…
 
-## DNS ¶õ ¹«¾ùÀÎ°¡?
-    - µµ¸ÞÀÎ ÀÌ¸§(www.naver.com) - > IPÁÖ¼Ò(17.929.255.xxx)·Î º¯È¯
+## DNS ëž€ ë¬´ì—‡ì¸ê°€?
+    - ë„ë©”ì¸ ì´ë¦„(www.naver.com) - > IPì£¼ì†Œ(17.929.255.xxx)ë¡œ ë³€í™˜
 
 ![](2021-01-02-02-10-25.png)
 
-## DNS Ä³½Ã
-- DNS¿¡¼­ ÀÌ¹Ì ÇÑ¹ø Ã³¸®µÈ µµ¸ÞÀÎ ³×ÀÓ°ú IPÁÖ¼Ò¸¦ Ä³½Ã¿¡ À¯ÁöÇÏ°Ô ÇØ¼­ ¼Óµµ¸¦ ¿Ã·ÁÁÜ
-- ¸Å¹ø DNS¿Í Åë½ÅÀ» ÇÏ´Â ºñ¿ëÀ» ÁÙÀÌ±â À§ÇÑ ¼ö´Ü, ÁÖ¼Ò¸¦ ÀúÀå
-- ÀúÀå À§Ä¡
-  - ºê¶ó¿ìÀú
-  - ¿î¿µÃ¼Á¦
-  - ¶ó¿ìÅÍ
+## DNS ìºì‹œ
+- DNSì—ì„œ ì´ë¯¸ í•œë²ˆ ì²˜ë¦¬ëœ ë„ë©”ì¸ ë„¤ìž„ê³¼ IPì£¼ì†Œë¥¼ ìºì‹œì— ìœ ì§€í•˜ê²Œ í•´ì„œ ì†ë„ë¥¼ ì˜¬ë ¤ì¤Œ
+- ë§¤ë²ˆ DNSì™€ í†µì‹ ì„ í•˜ëŠ” ë¹„ìš©ì„ ì¤„ì´ê¸° ìœ„í•œ ìˆ˜ë‹¨, ì£¼ì†Œë¥¼ ì €ìž¥
+- ì €ìž¥ ìœ„ì¹˜
+  - ë¸Œë¼ìš°ì €
+  - ìš´ì˜ì²´ì œ
+  - ë¼ìš°í„°
   - ISP(Internet Service Provider)
 
 <br>
@@ -42,33 +42,33 @@
 
 example
 ```
-1. ÀüÈ­¸¦ °É°í Ä£±¸°¡ ¹Þ±â¸¦ ±â´Ù¸°´Ù : SYN
-2. Ä£±¸°¡ ÀüÈ­¸¦ ¹Þ°í "¿©º¸¼¼¿ä" : ACK + SYN
-3. ÀüÈ­ ÅëÈ­ÇÑ´Ù. "¾È³çÇÏ¼¼¿ä", ´©±¸´©±¸ÀÔ´Ï´Ù : ACK
+1. ì „í™”ë¥¼ ê±¸ê³  ì¹œêµ¬ê°€ ë°›ê¸°ë¥¼ ê¸°ë‹¤ë¦°ë‹¤ : SYN
+2. ì¹œêµ¬ê°€ ì „í™”ë¥¼ ë°›ê³  "ì—¬ë³´ì„¸ìš”" : ACK + SYN
+3. ì „í™” í†µí™”í•œë‹¤. "ì•ˆë…•í•˜ì„¸ìš”", ëˆ„êµ¬ëˆ„êµ¬ìž…ë‹ˆë‹¤ : ACK
 ```
 
 ## HTTP request, response (Hyper text Transfer Protocol)
- - HTTP(Hyper Text Transfer Protocol): WWW »ó¿¡¼­ Á¤º¸¸¦ ÁÖ°í¹ÞÀ» ¼ö ÀÖ´Â ÇÁ·ÎÅäÄÝ
+ - HTTP(Hyper Text Transfer Protocol): WWW ìƒì—ì„œ ì •ë³´ë¥¼ ì£¼ê³ ë°›ì„ ìˆ˜ ìžˆëŠ” í”„ë¡œí† ì½œ
 
- - ¿äÃ»¿Í ÀÀ´äÀ¸·Î ¼­¹ö´Â Å¬¶óÀÌ¾ðÆ®¿Í Åë½ÅÇÏ´Â ±¸Á¶
+ - ìš”ì²­ì™€ ì‘ë‹µìœ¼ë¡œ ì„œë²„ëŠ” í´ë¼ì´ì–¸íŠ¸ì™€ í†µì‹ í•˜ëŠ” êµ¬ì¡°
 
 ![](2021-01-02-02-14-18.png)
 
-## TCP ¿Í UDPÀÇ Â÷ÀÌÁ¡
+## TCP ì™€ UDPì˜ ì°¨ì´ì 
 ```
-TCP´Â µ¥ÀÌÅÍ¸¦ ÁÖ°í ¹ÞÀ» ¾ç´Ü °£¿¡ ¸ÕÀú ¿¬°áÀ» ¼³Á¤ÇÏ°í ¼³Á¤µÈ ¿¬°áÀ» ÅëÇØ ¾ç¹æÇâÀ¸·Î µ¥ÀÌÅÍ¸¦ Àü¼ÛÇÏÁö¸¸, UDP´Â ¿¬°áÀ» ¼³Á¤ÇÏÁö ¾Ê°í ¼ö½ÅÀÚ°¡ µ¥ÀÌÅÍ¸¦ ¹ÞÀ» ÁØºñ¸¦ È®ÀÎÇÏ´Â ´Ü°è¸¦ °ÅÄ¡Áö ¾Ê°í ´Ü¹æÇâÀ¸·Î Á¤º¸¸¦ Àü¼ÛÇÑ´Ù.
+TCPëŠ” ë°ì´í„°ë¥¼ ì£¼ê³  ë°›ì„ ì–‘ë‹¨ ê°„ì— ë¨¼ì € ì—°ê²°ì„ ì„¤ì •í•˜ê³  ì„¤ì •ëœ ì—°ê²°ì„ í†µí•´ ì–‘ë°©í–¥ìœ¼ë¡œ ë°ì´í„°ë¥¼ ì „ì†¡í•˜ì§€ë§Œ, UDPëŠ” ì—°ê²°ì„ ì„¤ì •í•˜ì§€ ì•Šê³  ìˆ˜ì‹ ìžê°€ ë°ì´í„°ë¥¼ ë°›ì„ ì¤€ë¹„ë¥¼ í™•ì¸í•˜ëŠ” ë‹¨ê³„ë¥¼ ê±°ì¹˜ì§€ ì•Šê³  ë‹¨ë°©í–¥ìœ¼ë¡œ ì •ë³´ë¥¼ ì „ì†¡í•œë‹¤.
 
-½Å·Ú¼º -TCP´Â ¸Þ½ÃÁö ¼ö½ÅÀ» È®ÀÎÇÏÁö¸¸ UDP´Â ¼ö½ÅÀÚ°¡ ¸Þ½ÃÁö¸¦ ¼ö½ÅÇß´ÂÁö È®ÀÎÇÒ ¼ö ¾ø´Ù.
+ì‹ ë¢°ì„± -TCPëŠ” ë©”ì‹œì§€ ìˆ˜ì‹ ì„ í™•ì¸í•˜ì§€ë§Œ UDPëŠ” ìˆ˜ì‹ ìžê°€ ë©”ì‹œì§€ë¥¼ ìˆ˜ì‹ í–ˆëŠ”ì§€ í™•ì¸í•  ìˆ˜ ì—†ë‹¤.
 
-UDP´Â ¼ø¼­¸¦ ¿¹ÃøÇÒ ¼ö ¾ø´Ù.
-ºÎÇÏ - TCPº¸´Ù ¼Óµµ°¡ ÀÏ¹ÝÀûÀ¸·Î ºü¸£°í ¿À¹öÇìµå°¡ Àû´Ù
+UDPëŠ” ìˆœì„œë¥¼ ì˜ˆì¸¡í•  ìˆ˜ ì—†ë‹¤.
+ë¶€í•˜ - TCPë³´ë‹¤ ì†ë„ê°€ ì¼ë°˜ì ìœ¼ë¡œ ë¹ ë¥´ê³  ì˜¤ë²„í—¤ë“œê°€ ì ë‹¤
 ```
 
 ## ISP
 ```
-½Å·Ú¼º ÀÖ´Â ¿¬°á ÁöÇâÇü ÇÁ·ÎÅäÄÝ·Î ¿¬¼ÓÀûÀ¸·Î ÆÐÅ¶ÀÇ »óÅÂ Á¤º¸¸¦ È®ÀÎÇÏ°í À¯ÁöÇÑ´Ù.
+ì‹ ë¢°ì„± ìžˆëŠ” ì—°ê²° ì§€í–¥í˜• í”„ë¡œí† ì½œë¡œ ì—°ì†ì ìœ¼ë¡œ íŒ¨í‚·ì˜ ìƒíƒœ ì •ë³´ë¥¼ í™•ì¸í•˜ê³  ìœ ì§€í•œë‹¤.
 
-¿À·ùÁ¦¾î, Èå¸§Á¦¾î, È¥ÀâÁ¦¾î µîÀ» Á¦°øÇÑ´Ù.
+ì˜¤ë¥˜ì œì–´, íë¦„ì œì–´, í˜¼ìž¡ì œì–´ ë“±ì„ ì œê³µí•œë‹¤.
 
 SYN : synchronize sequence number
 ACK : acnowledgement

@@ -1,3 +1,3 @@
 # DataBase
 
-- [Æ®·£Àè¼Ç °í¸³·¹º§](./document/isolationLevel.md)
+- [íŠ¸ëžœìž­ì…˜ ê³ ë¦½ë ˆë²¨](./document/isolationLevel.md)
