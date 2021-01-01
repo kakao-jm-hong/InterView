@@ -1,2 +1,2 @@
 # JAVA
-- [°´Ã¼ ÁöÇâ ÇÁ·Î±×·¡¹Ö](./document/oop.md)
+- [ê°ì²´ ì§€í–¥ í”„ë¡œê·¸ëž˜ë°](./document/oop.md)
