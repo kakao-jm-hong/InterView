@@ -1,23 +1,17 @@
 # InterView
 
 ## Computer Science
-* OS
-* Network
-* DataBase
-* Data Structure
-* Algorithm
+* [OS](./OS/README.md)
+* [Network](./Network/README.md)
+* [DataBase](./DataBase/README.md)
+* [Data Structure](./Data-Structure/README.md)
+* [Algorithm](./Algorithm/README.md)
+
+## interactive design
 
 ## 그 외
 * [Back-End](./Back-End/README.md)
-* Front-End
+* [Front-End](./Front-End/README.md)
+
   
-
-#### VsCode 설정 (markDown 최적화)
-* paste image
-* vscode-imgur
-* Optimize Images
-* Live Server
-* Markdown All in One
-* Eclipse Keymap
-
 
