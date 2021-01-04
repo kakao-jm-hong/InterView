@@ -1,5 +1,7 @@
 # JDK8
 JDK8은 현재 가장 많이 사용되고 있는 안정화된 JAVA 버전으로 공식 업데이트 기간은 종료되었지만 많이 사용되고 있는 만큼 추가 지원기간이 꽤 길게 잡혀있다.
+- 현재 최신버전은 람다식 표현 추가
+- stream API 추가
 
 # JDK11
 JDK11부터 LTS(Long Term Support)가 생겨났으며 Premire + Extended Support로 최대 8년간 보안 업데이트와 버그 수정 지원을 받을 수 있게 되었다.
