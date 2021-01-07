@@ -6,37 +6,37 @@
 ## JDK
 ![](2021-01-07-21-13-43.png)
 
-## JVM ÀÌ¶õ?
+## JVM ì´ëž€?
 
 JVM ==> <strong>JAVA Virtual Machine</strong>
 ```
-°¡»ó¸Ó½ÅÀÌ¶õ ÇÁ·Î±×·¥ÀÇ ½ÇÇàÇÏ±â À§ÇØ ¹°¸®Àû ¸Ó½Å°ú À¯»çÇÑ ¸Ó½ÅÀ» ¼ÒÇÁÆ®¿þ¾î·Î ±¸Çö ÇÑ°ÍÀÌ´Ù. Æ¯Â¡À¸·Î´Â OS¿¡ Á¾¼ÓÀûÀÌÁö¾Ê°í ÇÏ³ªÀÇ ÀÚ¹ÙÄÚµå·Î µ¿ÀÛÇÏ°Ô ÇØÁØ´Ù.
+ê°€ìƒë¨¸ì‹ ì´ëž€ í”„ë¡œê·¸ëž¨ì˜ ì‹¤í–‰í•˜ê¸° ìœ„í•´ ë¬¼ë¦¬ì  ë¨¸ì‹ ê³¼ ìœ ì‚¬í•œ ë¨¸ì‹ ì„ ì†Œí”„íŠ¸ì›¨ì–´ë¡œ êµ¬í˜„ í•œê²ƒì´ë‹¤. íŠ¹ì§•ìœ¼ë¡œëŠ” OSì— ì¢…ì†ì ì´ì§€ì•Šê³  í•˜ë‚˜ì˜ ìžë°”ì½”ë“œë¡œ ë™ìž‘í•˜ê²Œ í•´ì¤€ë‹¤.
 ```
 
-# JVM µ¿ÀÛ°úÁ¤
+# JVM ë™ìž‘ê³¼ì •
 ![](2021-01-07-21-22-02.png)
 
 ## Class Loader
 ```
-.class ÆÄÀÏÀ» ·ÎµåÇÏ°í ¸µÅ©¸¦ ÅëÇØ ºñÄ¡ÇÏ´Â ÀÛ¾÷À» ¼öÇàÇÏ´Â ¸ðµâÀÌ´Ù.
-Runtime ½Ã¿¡ µ¿ÀûÀ¸·Î Å¬·¡½º¸¦ ·Î´õÇÑ´Ù.
-ÇöÀç »ç¿ëÇÏ´Â Class½º´Â ¸Þ¸ð¸®¿¡¼­ JVM¿¡ Å¾ÀçÇÏ°í »ç¿ëÇÏÁö ¾Ê´Â Class´Â Á¦°ÅÇÑ´Ù.
+.class íŒŒì¼ì„ ë¡œë“œí•˜ê³  ë§í¬ë¥¼ í†µí•´ ë¹„ì¹˜í•˜ëŠ” ìž‘ì—…ì„ ìˆ˜í–‰í•˜ëŠ” ëª¨ë“ˆì´ë‹¤.
+Runtime ì‹œì— ë™ì ìœ¼ë¡œ í´ëž˜ìŠ¤ë¥¼ ë¡œë”í•œë‹¤.
+í˜„ìž¬ ì‚¬ìš©í•˜ëŠ” ClassìŠ¤ëŠ” ë©”ëª¨ë¦¬ì—ì„œ JVMì— íƒ‘ìž¬í•˜ê³  ì‚¬ìš©í•˜ì§€ ì•ŠëŠ” ClassëŠ” ì œê±°í•œë‹¤.
 ```
 
 ## Execution Engine
 ```
-Class Loader°¡ JVM³»ÀÇ Runtime data ¿µ¿ª¿¡ ¹ÙÀÌÆ® ÄÚµå¸¦ ¹èÄ¡ÇÏ¸é Execution Engine¿¡ ÀÇÇØ ½ÇÇàµÈ´Ù. JAVA ByteCode·Î ½ÇÇàµÇ¸ç ÀÌ¶§ 2°¡Áö µ¿ÀÛ¹æ½ÄÀÌ »ý±ä´Ù.
+Class Loaderê°€ JVMë‚´ì˜ Runtime data ì˜ì—­ì— ë°”ì´íŠ¸ ì½”ë“œë¥¼ ë°°ì¹˜í•˜ë©´ Execution Engineì— ì˜í•´ ì‹¤í–‰ëœë‹¤. JAVA ByteCodeë¡œ ì‹¤í–‰ë˜ë©° ì´ë•Œ 2ê°€ì§€ ë™ìž‘ë°©ì‹ì´ ìƒê¸´ë‹¤.
 ```
 
-## Interpreter(ÀÎÅÍÇÁ¸®ÅÍ)
+## Interpreter(ì¸í„°í”„ë¦¬í„°)
 ```
-Execution EngineÀÌ Byte Code ´ÜÀ§·Î ÇÑÁÙ ÇÑÁÙ ÀÐÀ¸¸é¼­ ½ÇÇàÇÑ´Ù. ÀÎÅÍÇÁ¸®ÅÍ¾ð¾îÀÇ ÀåÁ¡À» °¡Áö°í ÀÖÁö¸¸ ´ÜÁ¡Àº ´À¸®´Ù´Â °Í ÀÌ°ÍÀ» º¸¿ÏÇÏ´Â°Ô JITÀÌ´Ù.
+Execution Engineì´ Byte Code ë‹¨ìœ„ë¡œ í•œì¤„ í•œì¤„ ì½ìœ¼ë©´ì„œ ì‹¤í–‰í•œë‹¤. ì¸í„°í”„ë¦¬í„°ì–¸ì–´ì˜ ìž¥ì ì„ ê°€ì§€ê³  ìžˆì§€ë§Œ ë‹¨ì ì€ ëŠë¦¬ë‹¤ëŠ” ê²ƒ ì´ê²ƒì„ ë³´ì™„í•˜ëŠ”ê²Œ JITì´ë‹¤.
 ```
 
 ## JIT(Just - in - Time)
 ```
-ÀÎÅÍÇÁ¸®ÅÍ ¹æ½ÄÀÇ ´ÜÁ¡À» º¸¿ÏÇÏ±â À§ÇØ µµÀÔµÈ JIT ÄÄÆÄÀÏ·¯ÀÌ´Ù. ÀÎÅÍÇÁ¸®ÅÍ ¹æ½ÄÀ¸·Î ½ÇÇàÇÏ´Ù°¡ È£ÃâÀÌ ¸¹Àº ByteCodeµéÀ» ºÎºÐÀûÀ¸·Î ³×ÀÌÆ¼ºê ÄÚµå·Î Á÷Á¢ ½ÇÇàÇÑ´Ù.
-ÀÌ·¸°Ô ³×ÀÌÆ¼ºê ÄÚµå°¡µÈ°ÍÀº Ä³½Ã·Î ÀúÀåÇÏ±â ¶§¹®¿¡ ÀÚÁÖ¼öÇàÇÏ´Â ÄÚµåµéÀº ºü¸¥ ½ÇÇàÀ» º¸¿©ÁØ´Ù.
+ì¸í„°í”„ë¦¬í„° ë°©ì‹ì˜ ë‹¨ì ì„ ë³´ì™„í•˜ê¸° ìœ„í•´ ë„ìž…ëœ JIT ì»´íŒŒì¼ëŸ¬ì´ë‹¤. ì¸í„°í”„ë¦¬í„° ë°©ì‹ìœ¼ë¡œ ì‹¤í–‰í•˜ë‹¤ê°€ í˜¸ì¶œì´ ë§Žì€ ByteCodeë“¤ì„ ë¶€ë¶„ì ìœ¼ë¡œ ë„¤ì´í‹°ë¸Œ ì½”ë“œë¡œ ì§ì ‘ ì‹¤í–‰í•œë‹¤.
+ì´ë ‡ê²Œ ë„¤ì´í‹°ë¸Œ ì½”ë“œê°€ëœê²ƒì€ ìºì‹œë¡œ ì €ìž¥í•˜ê¸° ë•Œë¬¸ì— ìžì£¼ìˆ˜í–‰í•˜ëŠ” ì½”ë“œë“¤ì€ ë¹ ë¥¸ ì‹¤í–‰ì„ ë³´ì—¬ì¤€ë‹¤.
 ```
 
 # Runtime Data Area
@@ -47,9 +47,9 @@ Execution EngineÀÌ Byte Code ´ÜÀ§·Î ÇÑÁÙ ÇÑÁÙ ÀÐÀ¸¸é¼­ ½ÇÇàÇÑ´Ù. ÀÎÅÍÇÁ¸®ÅÍ¾ð¾îÀ
 ![](2021-01-07-21-34-05.png)
 
 ## Minor GC
-»õ·Î »ý¼ºµÈ ´ëºÎºÐÀÇ °´Ã¼´Â Eden ¿µ¿ª¿¡ À§Ä¡, Eden ¿µ¿ª¿¡¼­ GC°¡ ¹ß»ý ÈÄ »ì¾Æ³²Àº °´Ã¼´Â Survior ¿µ¿ª Áß ÇÏ³ª·Î ÀÌµ¿ ÀÌ°úÁ¤À» ¹Ýº¹ÇÏ´Ù°¡ »ì¾Æ³²Àº °´Ã¼´Â Old ¿µ¿ªÀ¸·Î ÀÌµ¿.
+ìƒˆë¡œ ìƒì„±ëœ ëŒ€ë¶€ë¶„ì˜ ê°ì²´ëŠ” Eden ì˜ì—­ì— ìœ„ì¹˜, Eden ì˜ì—­ì—ì„œ GCê°€ ë°œìƒ í›„ ì‚´ì•„ë‚¨ì€ ê°ì²´ëŠ” Survior ì˜ì—­ ì¤‘ í•˜ë‚˜ë¡œ ì´ë™ ì´ê³¼ì •ì„ ë°˜ë³µí•˜ë‹¤ê°€ ì‚´ì•„ë‚¨ì€ ê°ì²´ëŠ” Old ì˜ì—­ìœ¼ë¡œ ì´ë™.
 
 ## Major GC
-Old¿µ¿ª¿¡ ÀÖ´Â ¸ðµç °´Ã¼µéÀ» °Ë»çÇÏ¿© ÂüÁ¶µÇÁö ¾ÊÀº °´Ã¼µéÀ» ÇÑ²¨¹ø¿¡ »èÁ¦ÇÑ´Ù. ½Ã°£ÀÌ ¿À·¡ °É¸®°í ½ÇÇà Áß ÇÁ·Î¼¼½º°¡ Á¤ÁöµÈ´Ù. ÀÌ°ÍÀ» 'stop-ther-world'¶ó°í ÇÑ´Ù.
+Oldì˜ì—­ì— ìžˆëŠ” ëª¨ë“  ê°ì²´ë“¤ì„ ê²€ì‚¬í•˜ì—¬ ì°¸ì¡°ë˜ì§€ ì•Šì€ ê°ì²´ë“¤ì„ í•œêº¼ë²ˆì— ì‚­ì œí•œë‹¤. ì‹œê°„ì´ ì˜¤ëž˜ ê±¸ë¦¬ê³  ì‹¤í–‰ ì¤‘ í”„ë¡œì„¸ìŠ¤ê°€ ì •ì§€ëœë‹¤. ì´ê²ƒì„ 'stop-ther-world'ë¼ê³  í•œë‹¤.
 
 ![](2021-01-07-21-36-33.png)
