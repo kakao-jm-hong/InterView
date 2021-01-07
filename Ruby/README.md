@@ -12,6 +12,9 @@
 
 출처 : 위키백과, 우리 모두의 백과사전.
 ```
+## 목차
+[시작하기](./document/ch01.md)
+
 
 
 출처 : https://pine.fm/LearnToProgram
