@@ -22,7 +22,7 @@
 * OCP (Open Closed Principle) 개방 폐쇄 원칙
 * LSP (Liskov Substitution Principle) 리스코프 치환 원칙
 * ISP (Interface Segregation Principle) 인터페이스 분리 원칙
-* DIP (Dependency Inversion Principle) 의존 역전 원칙\
+* DIP (Dependency Inversion Principle) 의존 역전 원칙
   
 ### SRP
 *클래스의 역할과 책임을 최대한 하나로 하자.*
