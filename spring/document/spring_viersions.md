@@ -7,7 +7,7 @@ Spring 3버전부터 5버전까지 사용해 보았지만 항상 최신버전을
 ## Spring 3.2
 - Java 5의 기능 (제너릭, 가변 매개변수 등)을 사용하여 개정되었습니다.
   - 이로 인해서 BeanFactory 등 핵심 API가 업데이트 되었습니다.
-- [@Async]() 주석을 통해 비동기 메서드 호출을 지원하기 시작했습니다.
+- [@Async](./Async.md) 주석을 통해 비동기 메서드 호출을 지원하기 시작했습니다.
 - 하나의 Spring.jar로 제공하던 것을 여러 Spring 모듈의 jar 파일로 나누어 제공하기 시작했습니다.
     - (Spring Core, Spring-web 등)
 - SPEL(Spring Expression Language)가 도입되어 XML 및 Annotation 기반 Bean 정의에서 사용할 수 있게 되었습니다.
@@ -37,16 +37,39 @@ Spring 3버전부터 5버전까지 사용해 보았지만 항상 최신버전을
 ## Spring 5.x
 - 제너릭 , 람다 가독성 향상되었습니다.
 - JDK 9 와도 호환이 가능합니다.
-- [Jackson]2.9() , [Protobuf]()3 , [Reactor]()3.1 과의 호환 추가
+- [Jackson]()2.9 , [Protobuf]()3 , [Reactor]()3.1 과의 호환 추가
 - Spring WebFlux 추가, 비동기와 넌-블로킹 이벤트 루프 모델 사용 가능
 - <strong>Kotlin</strong> 지원
 - [Junit 5]지원
-
 
 ## Spring 5.1
 - 2021년 말까지 지원
 
 ## Spring 5.2
 - 2021년 말까지 지원
+- 
+<br><br>
+
+# Spring Boot
+## Spring Boot 1.1 (Release 2014.05)
+* Java 1.6 이상
+* Spring Framework 4.0.5
+* Tomcat 7.0.54, Hibernate 4.3.1
+
+## Spring Boot 1.5 (Release 2017.01)
+* Java 8 이상
+* Spring Framework 4.3
+* Tomcat 8.5, Hibernate 5.0
+* ConfigurationProperties 에 JSR303 지원
+
+## Spring Boot 2.0.0 (Release 2018.03)
+* Java 8 , Java 9 tested
+* Spring Framework 5.0
+* Tomcat 8.5, Hibernate 5.2
+
+## Spring Boot 2.1.0(Release 2018.10)
+* Java 11 Support (Java 8 ~ 11)
+* Spring Framework 5.1
+* Tomcat 9, Hibernate 5.3
 
 (ง •̀_•́)ง 린크 내용은 예제를 만들어 추가 할 내용입니다.
