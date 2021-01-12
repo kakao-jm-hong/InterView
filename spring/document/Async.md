@@ -128,4 +128,53 @@ public class GreetingService {
 	}
 ```
 
-[전체소스](https://github.com/Hongjeongmin/workspace/tree/master/Spring/demo)
+# TEST
+
+## main문에서는 동기식으로 값을  출력한다. 
+```
+private static final Logger logger = LoggerFactory.getLogger(RedbinService.class);
+//@Async
+public void method1(int i) throws Exception {
+	// do something
+	Thread.sleep((int)Math.random()*1000L);
+	logger.info("i = " + i);
+}
+```
+```
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9964
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9965
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9966
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9967
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9968
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9969
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9970
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9971
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9972
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9973
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9974
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9975
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9976
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9977
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.
+```
+
+## main문에서는 비동기적으로 값을 실행한다.
+
+```
+private static final Logger logger = LoggerFactory.getLogger(RedbinService.class);
+@Async
+public void method1(int i) throws Exception {
+	// do something
+	Thread.sleep((int)Math.random()*1000L);
+	logger.info("i = " + i);
+}
+```
+```
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9967
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9965
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.RedbinService   : i = 9964
+2021-01-13 06:14:51.827  INFO 15581 --- [nio-8080-exec-1] com.example.demo.service.
+```
+
+
+
