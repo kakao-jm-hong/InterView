@@ -128,4 +128,4 @@ public class GreetingService {
 	}
 ```
 
-[전체소스](/Users/user/Desktop/workspace/work/Spring/demo/src/main/java/com/example/demo)
+[전체소스](https://github.com/Hongjeongmin/workspace/tree/master/Spring/demo)
