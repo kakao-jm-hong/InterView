@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tabs {
+            padding: 1em;
+        }
+
+        [role="tablist"] {
+            margin-bottom: -1px;
+        }
+
+        [role="tab"] {
+            position: relative;
+            z-index: 1;
+            background: yellow;
+            border: 1px solid red;
+            border-bottom: 0;
+            padding: 0.2em;
+        }
+
+        [role="tab"][aria-selected="true"] {
+            z-index: 3;
+        }
+
+        [role="tabpanel"] {
+            position: relative;
+            padding: 0 0.5em 0.5em 0.7em;
+            border: 1px solid red;
+            background: white;
+            z-index: 2;
+        }
+
+        [role="tabpanel"]:focus {
+            border-color: red;
+            outline: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <div role="tablist" aria-label="my-tab">
+            <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
+                첫번째 탭
+              </button>
+            <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                두번째 탭
+              </button>
+            <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                세번재 탭
+            </button>
+        </div>
+        <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+          <p>첫번째 탭입니다.</p>
+        </div>
+        <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+          <p>두번째 탭입니다.</p>
+        </div>
+        <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
+          <p>세번째 탭입니다.</p>
+        </div>
+      </div>
+      <script src="./tab.js"></script>
+</body>
+</html>
