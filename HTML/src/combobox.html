@@ -7,35 +7,16 @@
     <title>combobox</title>
 </head>
 <body>
-    <main>
-        <label id="ex3-label" class="combobox-label">
-            Choice 3 Fruit or Vegetable
-          </label>
-          <div class="combobox-wrapper">
-            <div role="combobox"
-                 aria-expanded="false"
-                 aria-owns="ex3-listbox"
-                 aria-haspopup="listbox"
-                 id="ex3-combobox">
-              <input type="text"
-                     aria-autocomplete="both"
-                     aria-controls="ex3-listbox"
-                     aria-labelledby="ex3-label"
-                     id="ex3-input">
-              <div class="combobox-dropdown"
-                   id="ex3-combobox-arrow"
-                   tabindex="-1"
-                   role="button"
-                   aria-label="Show vegetable options">
-                <img src="imgs/arrow_drop_down_grey_27x27.png" alt="">
-              </div>
-            </div>
-            <ul aria-labelledby="ex3-label"
-                role="listbox"
-                id="ex3-listbox"
-                class="listbox hidden">
-            </ul>
-          </div>
-    </main>
+
+  <label for="input" id="label" class="combobox-label">
+    Choice 1 Fruit or Vegetable
+  </label>
+  <div class="combobox-wrapper">
+    <div role="combobox" aria-expanded="false" aria-owns="ex1-listbox" aria-haspopup="listbox" id="combobox">
+      <input type="text" aria-autocomplete="list" aria-controls="">
+    </div>
+  </div>
+
+  <script src="combobox.js"></script>
 </body>
 </html>
