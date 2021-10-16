@@ -68,6 +68,8 @@ svg는 벡터(vector) 이미지를 표현하기 위한 포맷으로 w3c에서 �
 ```
 - 하나의 제어점으로 시작지점 끝지점의 곡선의 형태를 결정한다. 좌우 점이 Q 지점쪽으로 동일한 힘으로 기운다고 보면된다.
 
+[그외](https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial/Paths)
+
 ## 그외 속성들 Ellipse(타원), Polygon(다각형)
 
 ## 도형 한번에 그리기
@@ -79,4 +81,5 @@ svg 태그 안의 rect, circle 같은 태그들을 동시에 그릴수 있습니
   <text x="75" y="62" font-size="30" text-anchor="middle" fill="white">NTS</text>
 </svg>
 ```
+#### 출처
 - https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial
